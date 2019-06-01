@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <title>Formulário</title>
@@ -20,8 +20,9 @@
     </head>
     <body>
         <div class="container">
+             <h2>Usuário: </h2>
             {% for campo in form %}
-                <p>{% campo %}</p>
+                <p>{{ form.campo }}</p>
             {% endfor %}
         </div>
     </body>

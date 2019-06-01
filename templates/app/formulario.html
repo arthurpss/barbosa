@@ -20,35 +20,54 @@
 </head>
 <body>
 <div class="container">
-    <form>
-        <div method="POST" class="form-group">
-            <label for="exampleFormControlInput1">Endereço de Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Endereço de Email</label>
+            <br>
+            {{ form.email }}
         </div>
-        <div method="POST" class="form-group">
-            <label for="exampleInputPassword1">Senha</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <div class="form-group">
+            <label>Senha</label>
+            <br>
+            {{ form.senha }}
         </div>
-        <div method="POST" class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Me notifique</label>
+        <div class="form-group">
+            <label>Avaliacao</label>
+            <br>
+            {{ form.avaliacao.as_option }}
         </div>
-        <div method="POST" class="form-group">
-            <label for="exampleFormControlSelect1">Avaliação</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>Excelente</option>
-                <option>Bom</option>
-                <option>Médio</option>
-                <option>Ruim</option>
-                <option>Péssimo</option>
-            </select>
+        <div class="form-group">
+            <label>Receber notificões?</label>
+            <br>
+            {{ form.notificacao }}
         </div>
-        <div method="POST" class="form-group">
-            <label for="exampleFormControlTextarea1">Comentários Adicionais</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-group">
+            <label>Comentarios</label>
+            <br>
+            {{ form.comentarios }}
         </div>
-        <div method="POST">
-            <button type="submit" class="btn btn-primary"></button>
+        <!-- </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Me notifique</label>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Avaliação</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Excelente</option>
+                    <option>Bom</option>
+                    <option>Médio</option>
+                    <option>Ruim</option>
+                    <option>Péssimo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comentários Adicionais</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div> -->
+        <div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
         <div>
             <a href="visualizador/">Ver usuários</a>

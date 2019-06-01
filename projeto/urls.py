@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('forms/', views.formulario),
-    path('forms/visualizador/', views.visualizador)
+    path('visualizador/', views.visualizador)
 ]
