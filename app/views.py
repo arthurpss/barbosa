@@ -10,3 +10,6 @@ def formulario(request):
 
 def visualizador(request):
     return render(request, 'app/visualizar.html')
+
+def update(request):
+    return render(request, 'app/update.html')

@@ -13,7 +13,10 @@ AVALIACOES = [
 class UsuarioForm(forms.ModelForm):
     class Meta:
         model = TB_Usuario
-        fields = '__all__' #['email', 'senha', 'avaliacao', 'notificacao', 'comentarios']
+        fields = ' __all__'
+        # ['email', 'senha', 'avaliacao', 'notificacao', 'comentarios']
+
+
         widgets = {
             'email': forms.EmailField(attrs={'placeholder': 'exemplo@exemplo.com'}),
             'senha': forms.PasswordInput(),
