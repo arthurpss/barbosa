@@ -6,9 +6,7 @@
       <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projeto/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/formulario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/app/visualizar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app/visualizar.html" afterDir="false" />
@@ -47,10 +45,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/templates/app/formulario.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
               <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -58,6 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/app/visualizar.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="42">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
@@ -69,10 +75,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-63">
               <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+=======
+            <state relative-caret-position="63">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,22 +104,35 @@
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/app/formulario.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projeto/urls.py">
+        <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="184">
               <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+=======
+            <state relative-caret-position="231">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+>>>>>>> Stashed changes
               <folding>
-                <element signature="e#631#663#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/forms.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,6 +157,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> Stashed changes
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -166,17 +195,32 @@
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/projeto/urls.py" />
         <option value="$PROJECT_DIR$/templates/app/visualizar.html" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/templates/app/home.html" />
         <option value="$PROJECT_DIR$/templates/app/formulario.html" />
         <option value="$PROJECT_DIR$/app/forms.py" />
+=======
+        <option value="$PROJECT_DIR$/templates/app/update.html" />
+        <option value="$PROJECT_DIR$/projeto/urls.py" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/forms.py" />
+        <option value="$PROJECT_DIR$/app/views.py" />
+        <option value="$PROJECT_DIR$/templates/app/formulario.html" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="63" />
     <option name="y" value="47" />
     <option name="width" value="1221" />
     <option name="height" value="661" />
+=======
+    <option name="y" value="27" />
+    <option name="width" value="974" />
+    <option name="height" value="630" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -201,6 +245,7 @@
             <path>
               <item name="barbosa" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbosa" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="projeto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,6 +262,8 @@
             <path>
               <item name="barbosa" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbosa" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> Stashed changes
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,7 +394,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="30195000" />
+=======
+    <option name="totallyTimeSpent" value="41440000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,10 +410,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="0" y="27" width="1366" height="708" extended-state="6" />
     <layout>
       <window_info id="DB Browser" order="0" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49916804" weight="0.20409712" />
+=======
+    <frame x="0" y="27" width="1600" height="840" extended-state="6" />
+    <layout>
+      <window_info id="DB Browser" order="0" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49916804" visible="true" weight="0.13981959" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="2" sideWeight="0.50083196" side_tool="true" weight="0.108208954" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -377,7 +435,11 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32998884" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32998884" />
+<<<<<<< Updated upstream
       <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49848256" visible="true" weight="0.2513465" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49848256" visible="true" weight="0.26793557" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5015175" side_tool="true" weight="0.27827647" />
       <window_info anchor="bottom" id="Python Console" order="14" weight="0.32998884" />
       <window_info anchor="right" id="Database" order="0" weight="0.32852808" />
@@ -554,13 +616,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/home.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-63">
           <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+=======
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/formulario.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="142">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
         </state>
@@ -570,16 +641,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="213" selection-start-line="213" selection-end-line="213" />
+=======
+        <state relative-caret-position="168">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="261">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+=======
+        <state relative-caret-position="231">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/formulario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
         </state>
       </provider>
     </entry>
