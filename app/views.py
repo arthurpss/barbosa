@@ -6,7 +6,7 @@ def home(request):
 
 def formulario(request):
     form = UsuarioForm(request.POST)
-    return render(request, 'app/formulario.html', {'form':form})
+    return render(request, 'app/formulario.html', {'form': form})
 
 def visualizador(request):
     return render(request, 'app/visualizar.html')
