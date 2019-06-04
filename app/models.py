@@ -1,9 +1,6 @@
 from django.db import models
 
 class TB_Usuario(models.Model):
-<<<<<<< Updated upstream
-    id = models.AutoField(primary_key=True, name='id')
-=======
     AVALIACOES = [
         ('Excelente', 'Excelente'),
         ('Bom', 'Bom'),
@@ -12,7 +9,6 @@ class TB_Usuario(models.Model):
         ('Péssimo', 'Péssimo'),
     ]
     cpf = models.CharField(primary_key=True, max_length=11, name='cpf')
->>>>>>> Stashed changes
     email = models.EmailField(name='email')
     senha = models.CharField(max_length=20, name='senha')
     notificacao = models.BooleanField(name='notificacao')

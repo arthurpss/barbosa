@@ -11,10 +11,13 @@ def formulario(request):
             form.save()
             return render(request, 'app/visualizar.html')
         else:
-            return render(request, 'app/formulario.html', {'form': form})
+            pass
     else:
         form = UsuarioForm()
         return render(request, 'app/formulario.html', {'form': form})
 
 def visualizador(request):
     return render(request, 'app/visualizar.html')
+
+def update(request):
+    return render(request, 'app/update.html')

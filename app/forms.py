@@ -7,6 +7,8 @@ class UsuarioForm(forms.ModelForm):
         model = TB_Usuario
         fields = "__all__"
         # widgets = {
-        #      'email': forms.EmailField(attrs={'placeholder': 'exemplo@exemplo.com'}),
-        #      'senha': forms.PasswordInput(),
-        #  }
+        #     'email': forms.EmailField(attrs={'placeholder': 'exemplo@exemplo.com'}),
+        #     'senha': forms.PasswordInput(),
+        #     'avaliacao': forms.ChoiceField(choices=AVALIACOES)
+        # }
+        
