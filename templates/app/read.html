@@ -19,23 +19,23 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-    <h2>Usuários:</h2>
+<div class="container" align="center">
+    <h2>Usuários</h2>
     {% for usuario in usuarios %}
         <div>
             <p>
-                <span><b>CPF: </b>{{ usuario.cpf }}</span>
+                <span><b>ISBN: </b>{{ usuario.cpf }}</span>
             </p>
             <p>
-                <span><b>EMAIL: </b>{{ usuario.email }}</span>
+                <span><b>Nome do Livro: </b>{{ usuario.email }}</span>
             </p>
         </div>
         <div>
             <button>
-                <a href="/update/{{ usuario.cpf }}/">Editar usuário</a>
+                <a href="/update/{{ usuario.cpf }}/">Editar Livro</a>
             </button>
             <button>
-                <a href="/delete/{{ usuario.cpf }}">Excluir usuário</a>
+                <a href="/delete/{{ usuario.cpf }}">Excluir Livro</a>
             </button>
         </div>
     {% endfor %}

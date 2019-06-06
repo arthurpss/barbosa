@@ -19,19 +19,21 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-    <h2 align="" class="display-4">Atualizar Cadastro:</h2>
-    <h4>Usuário: <b>{{ usuario.cpf }}</b></h4>
+<div class="container" align="center">
+    <h2 align="" class="">Atualizar Dados do Livro:</h2>
+    <hr class="my-4">
+    <br>
+    <h4>ISBN do Livro: <b>{{ usuario.cpf }}</b></h4>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <label>Novo endereço de Email</label>
+            <label>Novo Nome do Livro</label>
             <br>
             {{ form.email }}
             {{ form.email.errors }}
         </div>
         <div class="form-group">
-            <label>Nova Senha</label>
+            <label>Nova Editora</label>
             <br>
             {{ form.senha }}
             {{ form.senha.errors }}
