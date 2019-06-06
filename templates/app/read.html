@@ -19,8 +19,10 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-    <h2>Usuários:</h2>
+<div class="container" align="center">
+    <div class="jumbotron">
+    <h2>Usuários</h2>
+        <hr class="my-4">
     {% for usuario in usuarios %}
         <div>
             <p>
@@ -37,8 +39,10 @@
             <button>
                 <a href="/delete/{{ usuario.cpf }}">Excluir usuário</a>
             </button>
+            <hr class="my-4">
         </div>
     {% endfor %}
+        </div>
 </div>
 </body>
 </html>

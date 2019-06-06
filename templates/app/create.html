@@ -19,7 +19,10 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
+<div class="container" align="center">
+    <div class="jumbotron">
+        <h2>Cadastrar</h2>
+        <hr class="my-4">
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
@@ -61,6 +64,7 @@
             {{ form.comentarios }}
             {{ form.comentarios.errors }}
         </div>
+        <hr class="my-4">
         <div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
@@ -69,6 +73,7 @@
         <button class="btn btn-primary">
             <a style="color: white" href="/home/">Pagina inicial</a>
         </button>
+        </div>
     </div>
 </div>
 </body>

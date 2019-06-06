@@ -19,8 +19,10 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-    <h2 align="" class="display-4">Atualizar Cadastro:</h2>
+<div class="container" align="center">
+    <div class="jumbotron">
+    <h2 align="" class="display-4">Atualizar Cadastro</h2>
+        <hr class="my-4">
     <h4>Usuário: <b>{{ usuario.cpf }}</b></h4>
     <form method="POST">
         {% csrf_token %}
@@ -36,10 +38,12 @@
             {{ form.senha }}
             {{ form.senha.errors }}
         </div>
+        <hr class="my-4">
         <div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
+        </div>
 </div>
 </body>
 </html>
