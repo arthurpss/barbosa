@@ -20,21 +20,46 @@
 </head>
 <body>
 <div class="container">
-    <h2 align="" class="display-4">Atualizar Cadastro:</h2>
-    <h4>Usuário: <b>{{ usuario.cpf }}</b></h4>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <label>Novo endereço de Email</label>
+            <label>CPF</label>
+            <br>
+            {{ form.cpf }}
+            {{ form.cpf.errors }}
+        </div>
+        <div class="form-group">
+            <label>Endereço de Email</label>
             <br>
             {{ form.email }}
             {{ form.email.errors }}
         </div>
         <div class="form-group">
-            <label>Nova Senha</label>
+            <label>Senha</label>
             <br>
             {{ form.senha }}
             {{ form.senha.errors }}
+        </div>
+        <div class="form-group">
+            <label>Avaliacao</label>
+            <br>
+            {{ form.avaliacao }}
+            {% for avaliacao in form.AVALIACAO %}
+                <option>{{ avaliacao }}</option>
+            {% endfor %}
+            {{ form.avaliacao.errors }}
+        </div>
+        <div class="form-group">
+            <label>Receber notificões?</label>
+            <br>
+            {{ form.notificacao }}
+            {{ form.notificacao.errors }}
+        </div>
+        <div class="form-group">
+            <label>Comentários</label>
+            <br>
+            {{ form.comentarios }}
+            {{ form.comentarios.errors }}
         </div>
         <div>
             <button type="submit" class="btn btn-primary">Enviar</button>
