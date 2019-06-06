@@ -19,8 +19,9 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
-    path('forms/', views.formulario, name="forms"),
-    path('visualizar/', views.visualizador, name="visualizar"),
-    path('atualizar/', views.atualizar, name="atualizar"),
+    path('home/', views.home, name="home"),
+    path('create/', views.create, name="create"),
+    path('read/', views.read, name="read"),
+    path('update/<int:cpf>/', views.update, name="update"),
+    path('delete/<int:cpf>/', views.delete, name="delete")
 ]

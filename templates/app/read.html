@@ -31,8 +31,12 @@
             </p>
         </div>
         <div>
-            <button>Editar usuário</button>
-            <button>Excluir usuário</button>
+            <button>
+                <a href="/update/{{ usuario.cpf }}/">Editar usuário</a>
+            </button>
+            <button>
+                <a href="/delete/{{ usuario.cpf }}">Excluir usuário</a>
+            </button>
         </div>
     {% endfor %}
 </div>

@@ -10,7 +10,7 @@ class TB_Usuario(models.Model):
         ('Péssimo', 'Péssimo'),
     ]
 
-    cpf = models.CharField(primary_key=True, max_length=11, name='cpf')
+    cpf = models.IntegerField(primary_key=True, name='cpf')
     email = models.EmailField(name='email')
     senha = models.CharField(max_length=20, name='senha')
     notificacao = models.BooleanField(name='notificacao')
