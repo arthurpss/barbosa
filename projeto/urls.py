@@ -28,6 +28,6 @@ urlpatterns = [
 
     path('create-autor/', views.create_autor, name="create_autor"),
     path('read-autor/', views.read_autor, name="read_autor"),
-    path('update-autor/<int:cpf>', views.update_autor, name="update_autor"),
-    path('delete-autor/<int:cpf>', views.delete_autor, name="delete_autor")
+    path('update-autor/<int:cpf>/', views.update_autor, name="update_autor"),
+    path('delete-autor/<int:cpf>/', views.delete_autor, name="delete_autor")
 ]

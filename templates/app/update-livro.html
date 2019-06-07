@@ -22,8 +22,6 @@
 <div class="container" align="center">
     <h2 align="" class="">Atualizar Dados do Livro:</h2>
     <hr class="my-4">
-    <br>
-    <h4>ISBN do Livro: <b>{{ livro.isbn }}</b></h4>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
@@ -35,15 +33,14 @@
         <div class="form-group">
             <label>Novo nome do Livro</label>
             <br>
-            {{ form.email }}
-            {{ form.email.errors }}
+            {{ form.nome }}
+            {{ form.nome.errors }}
         </div>
         <div class="form-group">
             <label>Nova Editora</label>
-            <label>Senha</label>
             <br>
-            {{ form.senha }}
-            {{ form.senha.errors }}
+            {{ form.editora }}
+            {{ form.editora.errors }}
         </div>
         <div class="form-group">
             <label>Selecionar Autor</label>

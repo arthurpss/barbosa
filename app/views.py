@@ -26,11 +26,11 @@ def read_livro(request):
 def update_livro(request, isbn):
     dados = {}
     livro = TB_Livro.objects.get(isbn=isbn)
-    form = LivroForm(request.POST or None, instance=isbn)
+    form = LivroForm(request.POST or None, instance=livro)
     dados['livro'] = livro
+    dados['form'] = form
     if form.is_valid():
         form.save()
-        dados['form'] = form
         return redirect('/read-livro/')
     return render(request, 'app/update-livro.html', dados)
 
@@ -60,11 +60,11 @@ def read_autor(request):
 def update_autor(request, cpf):
     dados = {}
     autor = TB_Autor.objects.get(cpf=cpf)
-    form = AutorForm(request.POST or None, instance=cpf)
+    form = AutorForm(request.POST or None, instance=autor)
     dados['autor'] = autor
+    dados['form'] = form
     if form.is_valid():
         form.save()
-        dados['form'] = form
         return redirect('/read-autor/')
     return render(request, 'app/update-autor.html', dados)
 
