@@ -23,5 +23,7 @@ urlpatterns = [
     path('create/', views.create, name="create"),
     path('read/', views.read, name="read"),
     path('update/<int:cpf>/', views.update, name="update"),
-    path('delete/<int:cpf>/', views.delete, name="delete")
+    path('delete/<int:cpf>/', views.delete, name="delete"),
+    path('create_treino/', views.create_treino, name="create_treino"),
+    path('read_treino/', views.read_treino, name="read_treino")
 ]

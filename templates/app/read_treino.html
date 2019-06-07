@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário</title>
+    <title>Visualizar Treino</title>
     <link rel="stylesheet" href="{% static "css/forms.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,35 +20,30 @@
 </head>
 <body>
 <div class="container">
-    <form method="POST">
-        {% csrf_token %}
-        <div class="form-group">
-            <label>CPF</label>
-            <br>
-            {{ form.cpf }}
-            {{ form.cpf.errors }}
-        </div>
-        <div class="form-group">
-            <label>Endereço de Email</label>
-            <br>
-            {{ form.email }}
-            {{ form.email.errors }}
-        </div>
-        <div class="form-group">
-            <label>Senha</label>
-            <br>
-            {{ form.senha }}
-            {{ form.senha.errors }}
+    <h2>Treinos:</h2>
+    {% for treino in treinos %}
+        <div>
+            <p>
+                <span><b>Nome: </b>{{ treino.nome }}</span>
+            </p>
+            <p>
+                <span><b>Tipo: </b>{{ treino.tipo }}</span>
+            </p>
         </div>
         <div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button>
+                <a href="/update/{{ treino.nome }}/">Editar treino</a>
+            </button>
+            <button>
+                <a href="/delete/{{ treino.nome }}">Excluir treino</a>
+            </button>
         </div>
-    </form>
-    <div>
+        <div>
         <button class="btn btn-primary">
             <a style="color: white" href="/home/">Pagina inicial</a>
         </button>
     </div>
+    {% endfor %}
 </div>
 </body>
 </html>

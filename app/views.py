@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from app.forms import UsuarioForm
+from app.forms import TreinoForm
 from app.models import TB_Usuario
+from app.models import TB_Treino
 
 
 def home(request):
@@ -46,3 +48,18 @@ def delete(request, cpf):
     usuario = TB_Usuario.objects.get(cpf=cpf)
     usuario.delete()
     return redirect('/read')
+
+def create_treino(request):
+    if request.method == "POST":
+        form = TreinoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/read_treino/')
+    else:
+        form = TreinoForm()
+        return render(request, 'app/create_treino.html', {'form': form})
+
+def read_treino(request):
+    dados = {}
+    dados['treinos'] = TB_Treino.objects.all()
+    return render(request, 'app/read_treino.html', dados)

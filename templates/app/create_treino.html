@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário</title>
+    <title>Treino</title>
     <link rel="stylesheet" href="{% static "css/forms.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,25 +23,19 @@
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <label>CPF</label>
+            <label>Nome</label>
             <br>
-            {{ form.cpf }}
-            {{ form.cpf.errors }}
+            {{ form.nome }}
+            {{ form.nome.errors }}
         </div>
         <div class="form-group">
-            <label>Endereço de Email</label>
+            <label>Tipo</label>
             <br>
-            {{ form.email }}
-            {{ form.email.errors }}
-        </div>
-        <div class="form-group">
-            <label>Senha</label>
-            <br>
-            {{ form.senha }}
-            {{ form.senha.errors }}
+            {{ form.tipo }}
+            {{ form.tipo.errors }}
         </div>
         <div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
     </form>
     <div>
