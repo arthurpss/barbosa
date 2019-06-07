@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="{% static "css/forms.css" %}">
+    <title>Atualizar livro</title>
+    <link rel="stylesheet" href="{% static "css/update.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,56 +20,55 @@
 </head>
 <body>
 <div class="container" align="center">
+    <h2 align="" class="">Atualizar Dados do Livro:</h2>
+    <hr class="my-4">
+    <br>
+    <h4>ISBN do Livro: <b>{{ livro.isbn }}</b></h4>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <label>ISBN</label>
+            <label>Novo ISBN</label>
             <br>
-            {{ form.cpf }}
-            {{ form.cpf.errors }}
+            {{ form.isbn }}
+            {{ form.isbn.errors }}
         </div>
         <div class="form-group">
-            <label>Nome do Livro</label>
+            <label>Novo nome do Livro</label>
             <br>
             {{ form.email }}
             {{ form.email.errors }}
         </div>
         <div class="form-group">
-            <label>Editora</label>
+            <label>Nova Editora</label>
+            <label>Senha</label>
             <br>
             {{ form.senha }}
             {{ form.senha.errors }}
         </div>
         <div class="form-group">
-            <label>Avaliação do Livro</label>
+            <label>Selecionar Autor</label>
             <br>
-            {{ form.avaliacao }}
-            {% for avaliacao in form.AVALIACAO %}
-                <option>{{ avaliacao }}</option>
+            {{ form.autor }}
+            {% for autor in autores %}
+                <option>{{ autor.nome }}</option>
             {% endfor %}
-            {{ form.avaliacao.errors }}
+            {{ form.autor.errors }}
+            <div>
+                <button class="btn btn-primary">
+                    <a style="color: white" href="/create-autor/">Criar autor</a>
+                </button>
+            </div>
         </div>
         <div class="form-group">
-            <label>Disponível no Estoque ?</label>
+            <label>Nova descrição</label>
             <br>
-            {{ form.notificacao }}
-            {{ form.notificacao.errors }}
-        </div>
-        <div class="form-group">
-            <label>Comentários Sobre o Livro</label>
-            <br>
-            {{ form.comentarios }}
-            {{ form.comentarios.errors }}
+            {{ form.descricao }}
+            {{ form.descricao.errors }}
         </div>
         <div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
-    <div>
-        <button class="btn btn-primary">
-            <a style="color: white" href="/home/">Pagina inicial</a>
-        </button>
-    </div>
 </div>
 </body>
 </html>

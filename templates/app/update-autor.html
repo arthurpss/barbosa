@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Atualizar Cadastro</title>
+    <title>Atualizar autor</title>
     <link rel="stylesheet" href="{% static "css/update.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,23 +20,29 @@
 </head>
 <body>
 <div class="container" align="center">
-    <h2 align="" class="">Atualizar Dados do Livro:</h2>
+    <h2 align="" class="">Atualizar dados do Autor:</h2>
     <hr class="my-4">
     <br>
-    <h4>ISBN do Livro: <b>{{ usuario.cpf }}</b></h4>
+    <h4>CPF do Autor: <b>{{ autor.cpf }}</b></h4>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <label>Novo Nome do Livro</label>
+            <label>Alterar CPF do Autor</label>
             <br>
-            {{ form.email }}
-            {{ form.email.errors }}
+            {{ form.cpf }}
+            {{ form.cpf.errors }}
         </div>
         <div class="form-group">
-            <label>Nova Editora</label>
+            <label>Alterar nome do Autor</label>
             <br>
-            {{ form.senha }}
-            {{ form.senha.errors }}
+            {{ form.nome }}
+            {{ form.nome.errors }}
+        </div>
+        <div class="form-group">
+            <label>Alterar nacionalidade do Autor</label>
+            <br>
+            {{ form.nacionalidade }}
+            {{ form.nacionalidade.errors }}
         </div>
         <div>
             <button type="submit" class="btn btn-primary">Enviar</button>

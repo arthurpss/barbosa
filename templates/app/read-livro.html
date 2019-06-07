@@ -3,7 +3,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Visualizar</title>
+    <title>Visualizar livros</title>
     <link rel="stylesheet" href="{% static "css/forms.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,25 +20,30 @@
 </head>
 <body>
 <div class="container" align="center">
-    <h2>Usuários</h2>
-    {% for usuario in usuarios %}
+    <h2>Livros</h2>
+    {% for livro in livros %}
         <div>
             <p>
-                <span><b>ISBN: </b>{{ usuario.cpf }}</span>
+                <span><b>ISBN: </b>{{ livro.isbn }}</span>
             </p>
             <p>
-                <span><b>Nome do Livro: </b>{{ usuario.email }}</span>
+                <span><b>Nome do Livro: </b>{{ livro.isbn }}</span>
             </p>
         </div>
         <div>
             <button>
-                <a href="/update/{{ usuario.cpf }}/">Editar Livro</a>
+                <a href="/update-livro/{{ livro.isbn }}/">Editar Livro</a>
             </button>
             <button>
-                <a href="/delete/{{ usuario.cpf }}">Excluir Livro</a>
+                <a href="/delete-livro/{{ livro.isbn }}">Excluir Livro</a>
             </button>
         </div>
     {% endfor %}
+    <div>
+        <button class="btn btn-primary">
+            <a style="color: white" href="/home/">Home</a>
+        </button>
+    </div>
 </div>
 </body>
 </html>

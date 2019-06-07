@@ -20,8 +20,14 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name="home"),
-    path('create/', views.create, name="create"),
-    path('read/', views.read, name="read"),
-    path('update/<int:cpf>/', views.update, name="update"),
-    path('delete/<int:cpf>/', views.delete, name="delete")
+
+    path('create-livro/', views.create_livro, name="create_livro"),
+    path('read-livro/', views.read_livro, name="read_livro"),
+    path('update-livro/<int:isbn>/', views.update_livro, name="update_livro"),
+    path('delete-livro/<int:isbn>/', views.delete_livro, name="delete_livro"),
+
+    path('create-autor/', views.create_autor, name="create_autor"),
+    path('read-autor/', views.read_autor, name="read_autor"),
+    path('update-autor/<int:cpf>', views.update_autor, name="update_autor"),
+    path('delete-autor/<int:cpf>', views.delete_autor, name="delete_autor")
 ]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar livro</title>
+    <link rel="stylesheet" href="{% static "css/forms.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container" align="center">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>ISBN</label>
+            <br>
+            {{ form.isbn }}
+            {{ form.isbn.errors }}
+        </div>
+        <div class="form-group">
+            <label>Nome do Livro</label>
+            <br>
+            {{ form.nome }}
+            {{ form.nome.errors }}
+        </div>
+        <div class="form-group">
+            <label>Editora</label>
+            <br>
+            {{ form.editora }}
+            {{ form.editora.errors }}
+        </div>
+        <div class="form-group">
+            <label>Autor do Livro</label>
+            <br>
+                {{ form.autor }}
+            <div>
+                <button class="btn btn-primary">
+                    <a style="color: white" href="/create-autor/">Criar autor</a>
+                </button>
+            </div>
+            {{ form.autor.errors }}
+        </div>
+        <div class="form-group">
+            <label>Descrição do livro</label>
+            <br>
+            {{ form.descricao }}
+            {{ form.descricao.errors }}
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+    <div>
+        <button class="btn btn-primary">
+            <a style="color: white" href="/home/">Pagina inicial</a>
+        </button>
+    </div>
+</div>
+</body>
+</html>
