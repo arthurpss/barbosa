@@ -7,12 +7,15 @@ class TB_Treino(models.Model):
     class Meta:
         db_table = "TB_Treino"
 
+    def __str__(self):
+        return f"{self.nome} - {self.tipo}"
+
 class TB_Usuario(models.Model):
 
     cpf = models.IntegerField(primary_key=True, name='cpf')
     email = models.EmailField(name='email')
     senha = models.CharField(max_length=20, name='senha')
-    treino = models.ForeignKey(TB_Treino, on_delete=models.CASCADE)
+    treino = models.ForeignKey(TB_Treino, on_delete=models.CASCADE, null=True)
 
     class Meta:
         db_table = "TB_Usuario"

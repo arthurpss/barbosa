@@ -14,7 +14,9 @@ def create(request):
         form = UsuarioForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/read/')
+            return redirect('read')
+        else:
+            print('invalido')
     else:
         form = UsuarioForm()
         return render(request, 'app/create.html', {'form': form})
