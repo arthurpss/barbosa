@@ -31,11 +31,11 @@
             </p>
         </div>
         <div>
-            <button>
-                <a href="/update-livro/{{ livro.isbn }}/">Editar Livro</a>
+            <button class="btn btn-primary">
+                <a style="color: white" href="/update-livro/{{ livro.isbn }}/">Editar Livro</a>
             </button>
-            <button>
-                <a href="/delete-livro/{{ livro.isbn }}">Excluir Livro</a>
+            <button class="btn btn-primary">
+                <a style="color: white" href="/delete-livro/{{ livro.isbn }}">Excluir Livro</a>
             </button>
         </div>
     {% endfor %}

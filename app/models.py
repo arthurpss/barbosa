@@ -7,6 +7,9 @@ class TB_Autor(models.Model):
     class Meta:
         db_table = "TB_Autor"
 
+    def __str__(self):
+        return self.nome
+
 
 class TB_Livro(models.Model):
     isbn = models.IntegerField(primary_key=True, name='isbn', unique=True)
