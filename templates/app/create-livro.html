@@ -20,6 +20,7 @@
 </head>
 <body>
 <div class="container" align="center">
+    <h2>Cadastrar Livros</h2>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
@@ -58,7 +59,7 @@
             {{ form.descricao.errors }}
         </div>
         <div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
     </form>
     <div>

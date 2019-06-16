@@ -20,6 +20,7 @@
 </head>
 <body>
 <div class="container" align="center">
+    <h2>Cadastrar Autores</h2>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
@@ -41,12 +42,12 @@
             {{ form.nacionalidade.errors }}
         </div>
         <div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
     </form>
     <div>
         <button class="btn btn-primary">
-            <a style="color: white" href="/home/">Pagina inicial</a>
+            <a style="color: white" href="/home/">Home</a>
         </button>
     </div>
 </div>

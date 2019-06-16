@@ -12,7 +12,7 @@ class TB_Autor(models.Model):
 
 
 class TB_Livro(models.Model):
-    isbn = models.IntegerField(primary_key=True, name='isbn', unique=True)
+    isbn = models.CharField(primary_key=True, max_length=80, name='isbn', unique=True)
     nome = models.CharField(max_length=80, name='nome')
     editora = models.CharField(max_length=100, name='editora')
     autor = models.ForeignKey(TB_Autor, on_delete=models.CASCADE, name='autor')
